@@ -1,0 +1,72 @@
+body{
+  font-family:  Segoe UI, sans-serif;;
+  margin: 0;
+  padding: 0;
+  background: #2b3431;
+  color: rgb(182, 181, 179);
+  
+}
+.cover{
+  background: #131a16;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  padding-bottom: 10px;
+}
+.cover h2{
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    font-family:  Segoe UI, sans-serif;;
+}
+.form{
+  display: flex;
+  gap: 1rem;
+}
+.form input{
+  width: 300px;
+}
+
+.form button{
+  background: #202f23;
+  color: #ffffff;
+  border-radius: 5px;
+}
+
+.each-task{
+  background: #131c19;
+  display: flex;
+  color: #ffffff;
+  font-family:  Segoe UI, sans-serif;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 5px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+
+}
+
+
+.button-group {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.edit-btn {
+  background: #064a27;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.dlt-btn{
+  background: #8d1005;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+
+}
