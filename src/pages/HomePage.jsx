@@ -18,7 +18,7 @@ export default function HomePage() {
 
     const FetchTasks = async () => {
         try {
-            const res = await fetch(`http://localhost:5000/Api/tasks?user=${userId}`);
+            const res = await fetch(`${import.meta.env.VITE_BACKEND_URL}/Api/tasks?user=${userId}`);
             if (!res.ok) {
                 throw new Error("Server error");
             }
@@ -33,7 +33,7 @@ export default function HomePage() {
     // check if user was deleted
     const validateUser = async () => {
         try {
-            const res = await fetch(`http://localhost:5000/Api/users/${userId}`);
+            const res = await fetch(`${import.meta.env.VITE_BACKEND_URL}/Api/users/${userId}`);
             if (!res.ok) {
                 alert("User no longer exists + task. Create a new account.");
                 setIsUserValid(false);
@@ -57,7 +57,7 @@ export default function HomePage() {
         }
 
         try {
-            const res = await fetch("http://localhost:5000/Api/AddTask", {
+            const res = await fetch(`${import.meta.env.VITE_BACKEND_URL}/Api/AddTask`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json", // ✅ correct
